@@ -1,0 +1,11 @@
+:host {
+    display: block;
+}
+h3{
+    text-decoration: underline;
+    font-weight: normal;
+    border: 1px solid #000;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+}

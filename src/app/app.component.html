@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<div>
+    <button (click)="showWelcomeMessage = !showWelcomeMessage">
+        {{ showWelcomeMessage ? "Hide welcome message" : "Show welcome message" }}
+    </button>
+</div>
+<div *ngIf="showWelcomeMessage">
+    <app-welcome-message></app-welcome-message>
+</div>
+<div>
+    <button (click)= "toggleFarewellBackgrond()">
+        Change background colour
+    </button>
+</div>
+<app-farewell-message [ngStyle]="{'background-color': farewellBackgroundColor}"></app-farewell-message>
+<app-user-input></app-user-input>

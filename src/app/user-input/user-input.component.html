@@ -1,0 +1,19 @@
+<div>
+    <h2>User Input</h2>
+    <div>
+      <label for="userInput">Enter Text: </label>
+      <input id="userInput" type="text" [(ngModel)]="userInput" placeholder="Type something...">
+    </div>
+    <div>
+      <label for="colorSelect">Choose Text Color: </label>
+      <select id="colorSelect" [(ngModel)]="selectedColor">
+        <option value="#000000">Black</option>
+        <option value="#e74c3c">Red</option>
+        <option value="#2980b9">Blue</option>
+        <option value="#27ae60">Green</option>
+      </select>
+    </div>
+    <p [ngStyle]="{'color': selectedColor}">{{ userInput || 'Your text will appear here...' }}</p>
+    <p *ngIf="userInput">You entered: {{ userInput }}</p>
+</div>
+  
