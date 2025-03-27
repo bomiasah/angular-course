@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { WelcomeMessageComponent } from './welcome-message/welcome-message.component';
 import { FarewellMessageComponent } from './farewell-message/farewell-message.component';
 import { UserInputComponent } from './user-input/user-input.component';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, WelcomeMessageComponent, FarewellMessageComponent, UserInputComponent, FormsModule],
+  imports: [CommonModule, WelcomeMessageComponent, FarewellMessageComponent, UserInputComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
